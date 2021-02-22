@@ -8,8 +8,4 @@ xulrunner-*.tar.bz2
 
 # Talend temp file
 talend/temp/*
-talend/workspace/*/temp/*
-talend/workspace/*/poms/*
-talend/workspace/*/code/routines/system
-talend/workspace/*/sqlPatterns
-talend/workspace/*/process/*.screenshot
+talend/workspace/*
