@@ -45,6 +45,3 @@ Using `environment variables`
 You may use this command:
 
 	make build
-
-But the download of the TOS_DI image make take a long while, in which case you may want to run buildit.sh instead which
-will download the TOS_DI (and dependencies) once only and use them each time to build the docker.
