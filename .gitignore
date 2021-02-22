@@ -6,6 +6,7 @@
 TOS_DI-*.zip
 xulrunner-*.tar.bz2
 
-# Talend temp file
-talend/temp/*
-talend/workspace/*
+# Talend workspace file
+talend/*
+!talend/temp/.gitkeep
+!talend/workspace/.gitkeep
