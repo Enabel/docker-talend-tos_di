@@ -14,7 +14,7 @@ on:
   pull_request:
 
 env:
-  IMAGE_NAME: enabel/talend-di
+  IMAGE_NAME: talend-di
 
 jobs:
   # Run tests.
