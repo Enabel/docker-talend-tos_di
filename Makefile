@@ -1,9 +1,10 @@
 TOS_DI_VERS=7.3.1
 TOS_DI_FULLVERS=20200219_1130-V${TOS_DI_VERS}
+TAG=enabelit/talend-tos_di
 
 build: depend
 	docker build \
-		--tag=enabelit/talend-tos_di:${TOS_DI_VERS} \
+		--tag=${TAG} \
 		--build-arg TOS_DI_CMD="true" \
 		--build-arg TOS_DI_LOCALFILE="TOS_DI-${TOS_DI_FULLVERS}.zip" \
 		--build-arg XULRUNNER_CMD="true" \
@@ -11,7 +12,7 @@ build: depend
 		.
 
 run: build
-	./runit.sh
+	IMAGE=${TAG} ./runit.sh
 
 TOS_DI-${TOS_DI_FULLVERS}.zip:
 	wget https://downloads.sourceforge.net/project/talend-studio/Talend%20Open%20Studio/${TOS_DI_VERS}/TOS_DI-${TOS_DI_FULLVERS}.zip
